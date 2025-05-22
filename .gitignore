@@ -1,0 +1,10 @@
+# Arquivos sensíveis
+.env
+key_google.json
+
+# Python
+__pycache__/
+*.pyc
+
+# VSCode
+.vscode/
