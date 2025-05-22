@@ -36,6 +36,35 @@ GCP_PROJECT_ID=seu-projeto-id
 BQ_DATASET=seu_dataset
 ```
 
+## 📁 Estrutura das tabelas no BQ
+
+```sql
+Tabela: cryptocurrencies
+CREATE TABLE `seu-projeto.seu_dataset.cryptocurrencies` (
+  id STRING,
+  rank INT64,
+  name STRING,
+  symbol STRING,
+  supply FLOAT64,
+  maxSupply FLOAT64,
+  marketCapUsd FLOAT64,
+  volumeUsd24Hr FLOAT64,
+  priceUsd FLOAT64,
+  changePercent24Hr FLOAT64,
+  vwap24Hr FLOAT64,
+  updatedAt DATETIME
+);
+
+Tabela: price_history
+CREATE TABLE `seu-projeto.seu_dataset.price_history` (
+  id STRING,
+  priceUsd FLOAT64,
+  volumeUsd24Hr FLOAT64,
+  marketCapUsd FLOAT64,
+  recordedAt TIMESTAMP
+);
+```
+
 ## 📊 Dashboard
 🔗 [Acessar no Looker Studio](https://lookerstudio.google.com/reporting/cd4e1f06-bf0e-4028-a089-5f4a25c05a87)
 
